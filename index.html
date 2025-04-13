@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Directory Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Sticky Header -->
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">
+                    Directory
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Home</a>
+                    <a href="#directory" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Directory</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-[50vh] bg-gradient-to-br from-blue-600 to-blue-800 flex items-center">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTAgMGw2MCA2ME0wIDYwTDYwIDAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPgo8L3N2Zz4=')]"></div>
+        <div class="container mx-auto px-6 relative">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Find the Perfect Business Directory</h1>
+                <p class="text-xl text-white/90 mb-8">Discover and connect with the best local businesses in your area.</p>
+                <a href="#directory" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    Explore Directory
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filters -->
+    <section class="bg-white py-8 border-b">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap gap-4 justify-center">
+                <button class="category-btn bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300">
+                    All
+                </button>
+                <button class="category-btn bg-white text-gray-600 px-6 py-2 rounded-full border hover:border-blue-600 hover:text-blue-600 transform hover:scale-105 transition-all duration-300">
+                    Restaurants
+                </button>
+                <button class="category-btn bg-white text-gray-600 px-6 py-2 rounded-full border hover:border-blue-600 hover:text-blue-600 transform hover:scale-105 transition-all duration-300">
+                    Shopping
+                </button>
+                <button class="category-btn bg-white text-gray-600 px-6 py-2 rounded-full border hover:border-blue-600 hover:text-blue-600 transform hover:scale-105 transition-all duration-300">
+                    Services
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Directory Cards -->
+    <section id="directory" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Directory Card Template (Repeated 9 times) -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl border border-gray-200 hover:border-blue-200 transform hover:scale-102 transition-all duration-300">
+                    <img src="https://via.placeholder.com/400x250" alt="Business" class="w-full h-48 object-cover rounded-t-xl">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">Restaurant</span>
+                        <h3 class="text-xl font-bold mt-4 mb-2 text-gray-800">Business Name</h3>
+                        <p class="text-gray-600 mb-4">Short description of the business goes here. This provides a brief overview.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500"><i class="fas fa-map-marker-alt mr-2"></i>Location</span>
+                            <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat card 8 more times -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ Item Template (Repeated 5 times) -->
+                <div class="border rounded-lg hover:shadow-md transition-all duration-300">
+                    <button class="flex justify-between items-center w-full px-6 py-4 text-left">
+                        <span class="font-semibold text-gray-800">How do I list my business?</span>
+                        <i class="fas fa-chevron-down text-gray-400"></i>
+                    </button>
+                    <div class="px-6 pb-4 hidden">
+                        <p class="text-gray-600">Detailed answer goes here explaining the process of listing a business in the directory.</p>
+                    </div>
+                </div>
+                <!-- Repeat FAQ item 4 more times -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Directory</h3>
+                    <p class="text-gray-400">Find and connect with the best local businesses in your area.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="#directory" class="text-gray-400 hover:text-white transition-colors duration-300">Directory</a></li>
+                        <li><a href="/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Directory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
